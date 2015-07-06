@@ -1,0 +1,8 @@
+Observaciones casos de uso
+-------------------------------
+- No entregó a tiempo
+
+OBSERVACIONES SEGUNDA ENTREGA
+---------------------------------------
+- No entregó nada
+- No olvides hacer merge del pullrequest que te he enviado para poder continuar
