@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
@@ -11,17 +10,14 @@
 
         <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
 
-
         <style>
-
-                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+            @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
                 @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
                 /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
         </style>
 
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
-
 
         <script src="cordova.js" id="xdkJScordova_"></script>
 
@@ -34,25 +30,27 @@
         -->
         <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
         <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
     </head>
 
     <body id="afui">
-
 
         <header class="wrapping-col wrap-element uib_w_1 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-3"><a class="button backButton">Back</a>
             <h1>Energ.  Electric</h1>
         </header>
         <div class="uwrap" id="content">
-            <div class="upage vertical-col panel" id="mainpage" data-header="af-header-3" data-footer="none">
+            <div class="upage vertical-col panel resultadoM" id="mainpage" data-header="af-header-3" data-footer="none">
                 <div class="table-thing with-label widget uib_w_2 d-margins" data-uib="app_framework/input" data-ver="1">
                     <label class="narrow-control label-inline" for="lec1">Lect. Anterior</label>
+
                     <input class="wide-control" placeholder="Ingrese lectura Anterior" type="text" name="lectoant" id="lec1" maxlength="6">
                 </div>
                 <div class="table-thing with-label widget uib_w_3 d-margins" data-uib="app_framework/input" data-ver="1">
                     <label class="narrow-control label-inline" for="lec2">Lect. Actual</label>
                     <input class="wide-control" placeholder="Ingrese Lectura Actual" type="text" name="lectoac" id="lec2" maxlength="6">
                 </div>
-                <a class="button widget uib_w_4 d-margins icon busy" data-uib="app_framework/button" data-ver="1" id="butoncalcu">Calcular</a>
+
                 <div class="widget uib_w_5 d-margins" data-uib="media/text" data-ver="0">
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>
@@ -60,6 +58,8 @@
                         <p>Aplicacion para calcular consumo de energia electrica</p>
                     </div>
                 </div>
+                <a class="button widget uib_w_4 d-margins icon busy" data-uib="app_framework/button" data-ver="1" id="butoncalcu">Calcular</a>
+                <div style="padding: 5px 15px;" id="resulataEntra">resultado</div>
             </div>
         </div>
     </body>

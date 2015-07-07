@@ -331,3 +331,6 @@ body:not(#afui) .upage-outer {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
+.resultadoM {
+  padding: 5px;
+}

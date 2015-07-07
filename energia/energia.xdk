@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "5fdd5281-edb4-44b3-a96f-0c9991f77e9c",
-      "lastModifiedDate": 1434671811187,
+      "lastModifiedDate": 1436209668849,
       "creationDate": 1434671810692
     },
     "XDK-app-designer": "true",
@@ -76,7 +76,7 @@
           "android-targetSdkVersion": "19",
           "android-installLocation": "auto"
         },
-        "isActive_": true,
+        "isActive_": false,
         "appName_": "energia",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": [
