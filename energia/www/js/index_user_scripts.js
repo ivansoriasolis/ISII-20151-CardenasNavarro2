@@ -18,8 +18,11 @@
         var lecturaAc = document.getElementById('lec2');
         
         if((lecturaAc.value)*1 >= (lecturaAn.value)*1){ 
-            var resultado = (lecturaAn.value)*1 + (lecturaAc.value)*1;
-            document.getElementById('resulataEntra').innerHTML='El resultado es:'+'<div style="color:yellow">'+resultado+'</div>';
+            var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
+            var costo = resultado*0.58;
+            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div style="color:red">'+resultado+' KW </div>';
+            document.getElementById('resulataEntra').innerHTML='El pago a realizar es:'+'<div style="color:blue">'+costo+'</div>';
+            
         }
         else
         {
