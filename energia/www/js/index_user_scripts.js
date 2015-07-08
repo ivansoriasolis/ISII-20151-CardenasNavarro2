@@ -16,13 +16,17 @@
     {
         var lecturaAn = document.getElementById('lec1');
         var lecturaAc = document.getElementById('lec2');
-        if(lecturaAc>lecturaAn){ 
-        var resultado = (lecturaAn.value)*1 + (lecturaAc.value)*1;
-        document.getElementById('resulataEntra').innerHTML='El resultado es:'+'<div style="color:yellow">'+resultado+'</div>';
+        
+        if((lecturaAc.value)*1 >= (lecturaAn.value)*1){ 
+            var resultado = (lecturaAn.value)*1 + (lecturaAc.value)*1;
+            document.getElementById('resulataEntra').innerHTML='El resultado es:'+'<div style="color:yellow">'+resultado+'</div>';
         }
         else
-             document.getElementById('resulataEntra').innerHTML='Ingrese nuevamente los datos'+'<div style="color:red">'+resultado+'</div>';
-            
+        {
+            document.getElementById('resulataEntra').innerHTML='Ingrese nuevamente los datos';
+            lecturaAc.value='';
+            lecturaAn.value='';
+        }
          activate_page("#mainpage"); 
     });
     

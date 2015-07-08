@@ -307,13 +307,13 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
-    margin-left: 4px;
-    margin-right: 5px;
+    margin-left: 8px;
+    margin-right: 9px;
   }
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
-    margin-left: 4px;
-    margin-right: 5px;
+    margin-left: 8px;
+    margin-right: 9px;
   }
   #afui .d-margins {
     margin-top: 5px;
@@ -330,7 +330,4 @@ body:not(#afui) .upage-outer {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-}
-.resultadoM {
-  padding: 5px;
 }
