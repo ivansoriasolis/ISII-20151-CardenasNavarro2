@@ -17,13 +17,20 @@
         var lecturaAn = document.getElementById('lec1');
         var lecturaAc = document.getElementById('lec2');
         
-        if((lecturaAc.value)*1 >= (lecturaAn.value)*1){ 
+        if((lecturaAc.value)*1 > (lecturaAn.value)*1){ 
             var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
-            var costo = resultado*0.58;
+            var costo = resultado*0.56;
             document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo+' </div>';
             
+                    
+        }
+        
+                if((lecturaAc.value)*1 == (lecturaAn.value)*1){ 
+            var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
+            var costo = resultado+5;
+            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div style="color:red">'+resultado+' KW </div><br>'+'El pago minimo es:'+'<div style="color:blue"> S/. '+costo+' </div>';
             
-            
+                    
         }
         else
         {
