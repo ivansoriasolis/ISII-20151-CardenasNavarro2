@@ -20,8 +20,9 @@
         if((lecturaAc.value)*1 >= (lecturaAn.value)*1){ 
             var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
             var costo = resultado*0.58;
-            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div style="color:red">'+resultado+' KW </div>';
-            document.getElementById('resulataEntra').innerHTML='El pago a realizar es:'+'<div style="color:blue">'+costo+'</div>';
+            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo+' </div>';
+            
+            
             
         }
         else
