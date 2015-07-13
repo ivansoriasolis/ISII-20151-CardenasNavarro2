@@ -17,11 +17,11 @@
         var lecturaAn = document.getElementById('lec1');
         var lecturaAc = document.getElementById('lec2');
         
-        if((lecturaAc.value)*1 > (lecturaAn.value)*1){ 
+        if((lecturaAc.value)*1 >= (lecturaAn.value)*1){ 
             var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
             var costo = resultado*0.56;
-            var igv =costo*0.18;
-            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo+' </div> <br>'+'El IGV es:'+'<div style="color:blue"> S/. '+igv+' </div>';
+           // var igv =costo*0.18;
+            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo+' </div> ;
             
                     
         }
