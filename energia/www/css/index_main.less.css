@@ -358,3 +358,30 @@ body:not(#afui) .upage-outer {
 #afui .wide-control > .d-margins {
   margin: 0;
 }
+@media all {
+  #afui .bar-bg {
+    background-color: #dadada;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+  }
+}
+@media all {
+  #afui .thumb-bg > .sidebar-thumb {
+    background-image: url('../sidebar/css/images/gripper.png');
+  }
+  #afui .thumb-bg > .sidebar-thumb {
+    background-color: ;
+  }
+  #afui .thumb-bg > .sidebar-thumb:hover,
+  #afui .thumb-bg > .sidebar-thumb:active {
+    background-color: #eeeeee;
+  }
+}
+@media all {
+  #afui .bar-gutter .sidebar-content > .grid-pad {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

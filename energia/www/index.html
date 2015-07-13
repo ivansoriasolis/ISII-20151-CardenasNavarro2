@@ -27,11 +27,11 @@
         <!-- for your init code, see README and file comments for details -->
         <script src="xdk/init-dev.js"></script>
 
-        -->
         <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
         <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
         <script type="application/javascript" src="js/index_user_scripts.js"></script>
         <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
+        <script type="application/javascript" src="app_framework/pageChangeRepeater.js"></script>
     </head>
 
     <body id="afui">
@@ -61,9 +61,9 @@
                         <p>Aplicacion para calcular consumo de energia electrica</p>
                     </div>
                 </div>
-                <a class="button widget uib_w_4 d-margins icon busy green" data-uib="app_framework/button" data-ver="1" id="butoncalcu">Calcular</a>
+                <a class="button widget uib_w_4 d-margins icon busy green" data-uib="app_framework/button" data-ver="1" id="butoncalcu" href="#mainpage" data-transition="fade">Calcular</a>
 
-                <a class="button widget uib_w_4 icon trash orange" data-uib="app_framework/button" data-ver="1">Cancelar</a>
+                <a class="button widget uib_w_4 icon trash orange" data-uib="app_framework/button" data-ver="1" id="cancelar" href="#mainpage" data-transition="fade">Cancelar</a>
 
                 <div style="padding: 5px 15px;" id="resulataEntra">Resultado</div>
             </div>
