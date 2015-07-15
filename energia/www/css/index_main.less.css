@@ -385,3 +385,14 @@ body:not(#afui) .upage-outer {
     padding-left: 20px;
   }
 }
+@media all {
+  #afui .fondo {
+    background-color: ;
+    background-image: linear-gradient(top, #ffff80 0%, #ffff80 0%, #a6ff6a 34.97267759562842%, #00ff40 100%, #00ff40 100%);
+    background-image: -webkit-linear-gradient(top, #ffff80 0%, #ffff80 0%, #a6ff6a 34.97267759562842%, #00ff40 100%, #00ff40 100%);
+    background-image: url("../images/3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
