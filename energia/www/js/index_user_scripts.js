@@ -24,7 +24,7 @@
 		var igv =0.18;
 		var consumo =5;
         
-        if((lecturaAc.value)*1 > (lecturaAn.value)*1)
+        if((lecturaAc.value)*1 >= (lecturaAn.value)*1)
 		
 		
 		{ 
