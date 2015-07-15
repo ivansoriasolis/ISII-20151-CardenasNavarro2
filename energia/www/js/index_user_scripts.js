@@ -21,10 +21,10 @@
     {
         var lecturaAn = document.getElementById('lec1');
         var lecturaAc = document.getElementById('lec2');
-		var igv =0.18;
-		var consumo =5;
+		var igv = 0.18;
+		var consumo = 5;
         
-        if((lecturaAc.value)*1 >= (lecturaAn.value)*1)
+        if((lecturaAc.value)*1 > (lecturaAn.value)*1)
 		
 		
 		{ 
@@ -37,7 +37,7 @@
             
                     
         }
-		        if((lecturaAc.value)*1 == (lecturaAn.value)*1)
+		     /*   if((lecturaAc.value)*1 == (lecturaAn.value)*1)
 		
 		
 		{ 
@@ -49,7 +49,7 @@
             document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div 		   style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo1+' </div><br>'+'Pago con IGV es:'+'<div style="color:yellow">S/.'+pago1+'</div>' ;
             
                     
-        }
+        }*/
                        
         else
         {
@@ -61,16 +61,16 @@
     });
     
         /* button  #cancelar */
-/*    $(document).on("click", "#cancelar", function(evt)
+    $(document).on("click", "#cancelar", function(evt)
     {
-			alert();
+			alert("Se  cancelara los dato");
 			var lecturaAn = document.getElementById('lec1');
         	var lecturaAc = document.getElementById('lec2');		
 					
-		    document.getElementById('resulataEntra').innerHTML='Se cancelo los  datos';
+		    document.getElementById('resulataEntra').innerHTML='Se cancelo la operacion';
             lecturaAc.value='';
             lecturaAn.value='';	
-    });*/
+    });
     
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
