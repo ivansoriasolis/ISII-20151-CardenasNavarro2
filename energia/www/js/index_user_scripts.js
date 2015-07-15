@@ -29,7 +29,7 @@
 		
 		{ 
             var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
-            var costo = resultado*0.476;
+            var costo = resultado*0.4630;
 			var pago = costo*0.18;
 			
          
