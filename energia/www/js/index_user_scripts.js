@@ -31,9 +31,10 @@
             var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
             var costo = resultado*0.4630;
 			var pago = costo*0.18;
+			var pagoigv = pago + costo;
 			
          
-            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div 		   style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo+' </div><br>'+'Pago con IGV es:'+'<div style="color:yellow">S/.'+pago+'</div>' ;
+            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div 		   style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo+' </div><br>'+'Pago con IGV es:'+'<div style="color:yellow">S/.'+pagoigv+'</div>' ;
             
                     
         }
