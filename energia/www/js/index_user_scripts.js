@@ -23,13 +23,19 @@
         var lecturaAc = document.getElementById('lec2');
 		var igv = 0.18;
 		var consumo = 5;
-        
+        var alum_public = 2.36;
+		var fose = 8.82;
+		var mantenimiento = 0.67;
+		
+		var electrificacion = 0.42;
+		
+		
         if((lecturaAc.value)*1 > (lecturaAn.value)*1)
 		
 		
 		{ 
             var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
-            var costo = resultado*0.4630;
+            var costo = resultado*0.6070;
 			var pago = costo*0.18;
 			var pagoigv = pago + costo;
 			
