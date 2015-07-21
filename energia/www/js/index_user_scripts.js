@@ -44,16 +44,16 @@
             
                     
         }
-		     /*   if((lecturaAc.value)*1 == (lecturaAn.value)*1)
+		   /*   if((lecturaAc.value)*1==(lecturaAn.value)*1)
 		
 		
-		{ 
+		{  alert("Datos iguales")
             var resultado = lecturaAc.value*1;
             var costo1 = resultado*0.476;
 			var pago1 = costo1*0.18;
 			
          
-            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div 		   style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo1+' </div><br>'+'Pago con IGV es:'+'<div style="color:yellow">S/.'+pago1+'</div>' ;
+            document.getElementById('resulataEntra').innerHTML='El KW consumido es:'+'<div 		   style="color:red">'+resultado+' KW </div><br>'+'El subtotal es:'+'<div style="color:blue"> S/. '+costo1+' </div><br>'+'Pago a realizar por el consumo:'+'<div style="color:yellow">S/.'+pago1+'</div>' ;
             
                     
         }*/
