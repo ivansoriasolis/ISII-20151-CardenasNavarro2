@@ -21,11 +21,18 @@
     {
         var lecturaAn = document.getElementById('lec1');
         var lecturaAc = document.getElementById('lec2');
+		var alum_public = 2.19;
+		var cargofijo = 3.59;
+		var energia = 3.88;
+		var intereses = 0.08;
+		var mantenimiento = 0.68;
+		
 		var igv = 0.18;
-		var consumo = 5;
-        var alum_public = 2.36;
-		var fose = 8.82;
-		var mantenimiento = 0.67;
+		var consumoIgual = 5;
+		
+        
+		var fose = -12.03;
+		
 		
 		var electrificacion = 0.42;
 		
@@ -35,9 +42,17 @@
 		
 		{ 
             var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
-            var costo = resultado*0.6070;
+			
+			if(resultado < 30)
+			{
+			var pago = 12;
+				 document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div 		   style="color:red">'+pago+' KW   menima es el consumoo</div>';
+				
+			}
+            var costo = resultado*0.6470;
 			var pago = costo*0.18;
 			var pagoigv = pago + costo;
+			
 			
          
             document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div 		   style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo+' </div><br>'+'Pago con IGV es:'+'<div style="color:yellow">S/.'+pagoigv+'</div>' ;
