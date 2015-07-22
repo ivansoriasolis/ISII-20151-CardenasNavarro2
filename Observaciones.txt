@@ -1,0 +1,15 @@
+Observaciones casos de uso
+-------------------------------
+- No entregó a tiempo
+
+OBSERVACIONES SEGUNDA ENTREGA
+---------------------------------------
+- No entregó nada
+- No olvides hacer merge del pullrequest que te he enviado para poder continuar
+
+Observaciones tercera entrega
+----------------------------------------------
+- No hiciste merge al pullrquest que te envié con las observaciones del segundo avance, en lugar de eso has escrito un mensaje.
+- No me puedo sincronizar contigo hasta que aceptes o rechaces el pullrequest
+- Es la utima vez que reviso tu repositorio, yo solo deberia sincronizar el fork que te hice y ahi ver tus modificaciones, la siguiente vez que ocurra una dessincronizan por mal manejo de GIT, simplemente no reviso.
+- Los commits van bien asi debe ser paso a paso.
