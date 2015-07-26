@@ -21,18 +21,14 @@
     {
         var lecturaAn = document.getElementById('lec1');
         var lecturaAc = document.getElementById('lec2');
-		var alum_public = 2.19;
+		//var alum_public = 2.19;
 		var cargofijo = 3.59;
-		var energia = 3.88;
+		//var energia = 3.88;
 		var intereses = 0.08;
+		var primeros30kw= 8.82;
 		var mantenimiento = 0.68;
-		
-		var igv = 0.18;
-		var consumoIgual = 5;
-		
-        
-		var fose = -12.03;
-		
+				//var igv = 0.18;			     
+		//var fose = -12.03;		
 		
 		var electrificacion = 0.42;
 		
@@ -45,31 +41,47 @@
 			
 			if(resultado >30)
 			{
-				 console.log('exito el resultado es mayor a 30');
-			     var pago = 5;
-				 document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div 		   style="color:red">'+pago+' KW   menima es el consumoo</div>';
+				 console.log('Uds tiene  la posibilidad de afiliarse al FISE');
+			
+			     var energia = resultado*0.6070;
+				var alumbradoP= resultado*0.0945;
+				var subtotal = energia+alumbradoP+cargofijo+mantenimiento;
+				var total=subtotal*0.18;
+				var TotalPago = total+electrificacion;
+				
+            document.getElementById('resulataEntra').innerHTML='USTED CONSUMIO :'+'<div 		   style="color:#8B4513">'+resultado+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#B8860B"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#DAA520">S/.'+TotalPago+'</div>' ;
 				
 			}
-            var costo = resultado*0.6470;
-			var pago = costo*0.18;
-			var pagoigv = pago + costo;
+			var nuevoresult = lecturaAc-30;//calcula la diferencia
+			var energia = nuevoresult*0.6070;
+			var alumbradoP = energia*0.0945;
+			var subtotal = energia+alumbradoP+cargofijo+mantenimiento+primeros30kw;
+			var Total =subtotal*0.18;
+			var TotalPago = Total+electrificacion;
 			
 			
          
-            document.getElementById('resulataEntra').innerHTML='El KHW consumido es:'+'<div 		   style="color:red">'+resultado+' KW </div><br>'+'El pago a realizar es:'+'<div style="color:blue"> S/. '+costo+' </div><br>'+'Pago con IGV es:'+'<div style="color:yellow">S/.'+pagoigv+'</div>' ;
+            document.getElementById('resulataEntra').innerHTML='USTED HA CONSUMISO:'+'<div 		   style="color:#32CD32">'+resultado+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPago+'</div><br>'+'NO SE OLVIDE QUE PAGE ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500" ;
             
                     
         }
 		  else if((lecturaAc.value)*1==(lecturaAn.value)*1)
 		
 		
-		{  alert("Datos iguales");
+		{ 
+			
+			
+			alert("USTED NO TUVO CONSUMO EN ESTA VEZ");
             var resultado = lecturaAc.value*1;
-            var costo1 = resultado+2;
-			var pago1 = "hola";
+
+		    var subtotal = cargofijo+intereses+mantenimiento;
+			var Total =subtotal*0.18;
+			var TotalPago = Total+electrificacion;
+		 
+			//var pago1 = "hola";
 			
          
-            document.getElementById('resulataEntra').innerHTML='El KW consumido es:'+'<div 		   style="color:red">'+resultado+' KW </div><br>'+'El subtotal es:'+'<div style="color:blue"> S/. '+costo1+' </div><br>'+'Pago a realizar por el consumo:'+'<div style="color:yellow">S/.'+pago1+'</div>' ;
+            document.getElementById('resulataEntra').innerHTML='SU CONSUMO ES:'+'<div 		   style="color:#000000">'+resultado+' KW </div><br>'+'El subtotal es:'+'<div style="color:blue"> S/. '+subtotal+' </div><br>'+'Pago a realizar por el consumo:'+'<div style="color:yellow">S/.'+ TotalPago+'</div>' ;
             
                     
         }
