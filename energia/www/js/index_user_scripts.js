@@ -70,6 +70,33 @@
                 var TotalPago = Total + electrificacion;
                 document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPago+'</div><br>'+'NO SE OLVIDE QUE PAGE ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
             }     
+			
+			
+			        else
+        {
+            if (condicion2 == false) {
+                alert("Debe ingresar los campos de lectura");
+            }else{
+                alert("Error de lectura: Lectura Actual es menor");
+            }
+            //document.getElementById('idTextCosto').innerHTML='Ingrese nuevamente los datos';
+            lecActual.value='';
+            lecAnterior.value='';
+        }
+         activate_page("#mainpage"); 
+    });
+    
+    $(document).on("click", "#cancelar", function(evt)
+    {
+			alert("Datos cancelados");
+			var lecActual = document.getElementById('idLecturaActual');
+        	var lecAnterior = document.getElementById('idLecturaAnterior');		
+					
+		    document.getElementById('idTextCosto').innerHTML='Se canceló la operación';
+            lecActual.value='';
+            lecAnterior.value='';	
+    });
+
 		
 		
         if((lecturaAc.value)*1 > (lecturaAn.value)*1)
