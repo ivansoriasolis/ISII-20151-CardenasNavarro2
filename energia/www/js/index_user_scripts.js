@@ -39,7 +39,7 @@
 		{ 
             var resultado = (lecturaAc.value)*1 - (lecturaAn.value)*1;
 			
-			if(resultado >30)
+		if(resultado*1 < 30)
 			{
 				 console.log('Uds tiene  la posibilidad de afiliarse al FISE');
 			
@@ -61,7 +61,7 @@
 			
 			
          
-            document.getElementById('resulataEntra').innerHTML='USTED HA CONSUMISO:'+'<div 		   style="color:#32CD32">'+resultado+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPago+'</div><br>'+'NO SE OLVIDE QUE PAGE ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500" ;
+            document.getElementById('resulataEntra').innerHTML='USTED HA CONSUMISO:'+'<div 		   style="color:#32CD32">'+resultado+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPago+'</div><br>'+'NO SE OLVIDE QUE PAGE ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;
             
                     
         }
