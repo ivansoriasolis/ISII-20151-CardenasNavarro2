@@ -6,7 +6,9 @@
  */
  function register_event_handlers()
  {
-    
+    var nombreEquipo = null;
+    var montoTotal = 0;
+    var equipos = [];
     
   
 	/*function limpiarFomIN(){
@@ -19,18 +21,55 @@
 					
     $(document).on("click", "#butoncalcu", function(evt)
     {
-        var lecturaAn = document.getElementById('lec1');
-        var lecturaAc = document.getElementById('lec2');
-		//var alum_public = 2.19;
-		var cargofijo = 3.59;
-		//var energia = 3.88;
-		var intereses = 0.08;
-		var primeros30kw= 8.82;
-		var mantenimiento = 0.68;
-				//var igv = 0.18;			     
-		//var fose = -12.03;		
+        var lecActual = document.getElementById('idLecturaActual');
+        var lecAnterior = document.getElementById('idLecturaAnterior');
+		
+        var igv = 0.18;
+		var consumo = 0;
+        var alum_public = 0.0945;
+		var primeros30kw = 8.82; 
+		var mantenimiento = 0.67;
+		var costoKWh = 0.6070;
+		
+        var cargofijo = 3.59;
+        var intereses = 0.08;
+        var energia = 0;  	
 		
 		var electrificacion = 0.42;
+		
+		*//Condiciones para restringir ingesos
+					var condicion1 = (lecAnterior.value)*1 < (lecActual.value)*1;
+        			var condicion2 = lecActual.value != '' && lecAnterior.value != '';
+        			var condicion = condicion1 && condicion2;
+		
+		
+		//la   condicion para determinar el consumo de menor de 30 kwh
+		 if(condicion)
+		{     
+            var diferenciaLectura = (lecActual.value)*1 - (lecAnterior.value)*1;
+
+            if (diferenciaLectura<=30) {
+
+                energia = diferenciaLectura * costoKWh;
+                var costoAlumbrado= energia * alum_public;
+                
+                var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
+                var total = subtotal + subtotal * igv;
+                var TotalPago = total + electrificacion;
+                document.getElementById('idTextCosto').innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#B8860B"> S/. '+ subtotal + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#DAA520">S/.'+TotalPago+'</div>';
+            }
+		
+			
+			else
+            {
+                var nuevoresult = diferenciaLectura - 30;//calcula la diferencia
+                energia = nuevoresult * costoKWh;
+                var costoAlumbrado = energia * alum_public;
+                var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento + primeros30kw;
+                var Total = subtotal * igv;
+                var TotalPago = Total + electrificacion;
+                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPago+'</div><br>'+'NO SE OLVIDE QUE PAGE ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
+            }     
 		
 		
         if((lecturaAc.value)*1 > (lecturaAn.value)*1)
