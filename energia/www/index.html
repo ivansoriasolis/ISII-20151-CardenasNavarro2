@@ -43,160 +43,186 @@
         <script type="application/javascript" src="galleria/galleria.classic.min.js"></script>
         <script type="application/javascript" src="galleria/galleria-startup.js"></script>
         <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+        <script type="application/javascript" src="app_framework/themeRelease.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
     </head>
 
-    <body id="afui">
+    <body id="afui" class="af">
 
         <header class="wrapping-col wrap-element uib_w_1 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-3"><a class="button backButton">Back</a>
             <h1>Energ.  Electric</h1>
         </header>
-        <header class="wrapping-col wrap-element uib_w_6 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-0"><a class="button backButton">Back</a>
+        <header class="wrapping-col wrap-element uib_w_6" data-uib="app_framework/header" data-ver="2" id="af-header-0">
             <h1>Energia Electrica</h1>
         </header>
-        <header class="wrapping-col wrap-element uib_w_10" data-uib="app_framework/header" data-ver="2" id="af-header-1">
+        <header class="wrapping-col wrap-element uib_w_10 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-1"><a class="button backButton">Back</a>
             <h1></h1>
         </header>
-        <header class="wrapping-col wrap-element uib_w_11 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-2"><a class="button backButton">Back</a>
+        <header class="wrapping-col wrap-element uib_w_30 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-2"><a class="button backButton">Back</a>
             <h1>Consumo</h1>
         </header>
-        <header class="wrapping-col wrap-element uib_w_12" data-uib="app_framework/header" data-ver="2" id="af-header-2">
-            <h1>Consumo</h1>
-        </header>
-        <header class="wrapping-col wrap-element uib_w_24" data-uib="app_framework/header" data-ver="2" id="af-header-4">
+        <header class="wrapping-col wrap-element uib_w_51 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-1"><a class="button backButton">Back</a>
             <h1></h1>
         </header>
-        <header class="wrapping-col wrap-element uib_w_31" data-uib="app_framework/header" data-ver="2" id="af-header-4">
+        <header class="wrapping-col wrap-element uib_w_71" data-uib="app_framework/header" data-ver="2" id="af-header-4">
             <h1>Detalles de consumo</h1>
         </header>
         <div class="uwrap" id="content">
             <div class="upage panel resultadoM fondo" id="mainpage" data-header="af-header-0" data-footer="none">
                 <div class="upage-content ac0 content-area vertical-col" id="uib_page_2">
+                    <div class="widget uib_w_58 d-margins estilo" data-uib="media/text" data-ver="0">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div>
+                            <p>DETALLE DEL CONSUMO</p>
+                        </div>
+                    </div>
                     <div class="table-thing with-label widget uib_w_2 d-margins" data-uib="app_framework/input" data-ver="1">
-                        <label class="narrow-control label-inline" for="lec1">Lect. Anterior</label>
+                        <label class="narrow-control label-inline" for="idLecturaActual">LECTURA ACTUAL</label>
 
-                        <input class="wide-control" placeholder="Ingrese lectura Anterior" type="text" name="lectoant" id="lec1" maxlength="6">
+                        <input class="wide-control" placeholder="Ingrese Lectura Actual" type="text" name="lecActual" id="idLecturaActual" maxlength="6">
                     </div>
                     <div class="table-thing with-label widget uib_w_3 d-margins" data-uib="app_framework/input" data-ver="1">
-                        <label class="narrow-control label-inline" for="lec2">Lect. Actual</label>
-                        <input class="wide-control" placeholder="Ingrese Lectura Actual" type="text" name="lectoac" id="lec2" maxlength="6">
+                        <label class="narrow-control label-inline" for="idLecturaAnterior">LECTURA ANTERIOR</label>
+
+                        <input class="wide-control" placeholder="Ingrese Lectura Anterior" type="text" name="lecAnterior" id="idLecturaAnterior" maxlength="6">
                     </div>
-                    <div class="widget uib_w_5 d-margins" data-uib="media/text" data-ver="0">
+                    <div class="widget uib_w_5 d-margins estilo1" data-uib="media/text" data-ver="0">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
                         <div>
                             <p>Aplicacion para calcular consumo de energia electrica</p>
                         </div>
-                    </div><a class="button widget uib_w_4 d-margins icon busy yellow" data-uib="app_framework/button" data-ver="1" id="idbtnCalcular" href="#mainpage" data-transition="fade">Calcular</a><a class="button widget uib_w_4 icon trash orange" data-uib="app_framework/button"
-                    data-ver="1" id="cancelar" href="#mainpage" data-transition="fade">Cancelar</a><a class="button widget uib_w_7 d-margins icon question red default-graphic-text" data-uib="app_framework/button" data-ver="1" id="otros" href="#consumo"
-                    data-transition="fade">Otros Calculos</a>
-                    <div style="padding: 5px 15px;" id="resulataEntra">Resultado</div>
+                    </div><a class="button widget uib_w_4 d-margins icon busy yellow" data-uib="app_framework/button" data-ver="1" id="idbtnCalcular">Calcular</a><a class="button widget uib_w_4 icon trash orange" data-uib="app_framework/button" data-ver="1"
+                    id="cancelar" href="#mainpage" data-transition="fade">Cancelar</a><a class="button widget uib_w_7 d-margins default-graphic-text icon question red" data-uib="app_framework/button" data-ver="1" id="idbtnOtros" href="#consumo" data-transition="fade">Otros Calculos</a>
+
+                    <div class="widget uib_w_59 d-margins" data-uib="media/text" data-ver="0" id="idTextCosto">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
-            <div class="upage vertical-col left panel" id="consumo" data-header="af-header-2" data-footer="none">
-                <div class="uib-grid widget uib_w_13 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
-                    <div class="uib-grid-row">
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_14 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="idEquipoSonido"
-                            href="#detalle" data-transition="fade">
-                                <img src="images/EquipoSonido.png">
-                                <span class="uib-caption">Eq. Sonido</span>
-                            </a>
-                        </div>
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_15 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="idLavdora" href="#detalle"
-                            data-transition="fade">
-                                <img src="images/Lavadora.png">
-                                <span class="uib-caption">Lavadora</span>
-                            </a>
-                        </div>
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_16 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" href="#detalle" id="idLavadora"
-                            data-transition="fade">
-                                <img src="images/laptop.png">
-                                <span class="uib-caption">Laptop</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="uib-grid-row">
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_17 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="idbtndvd" href="#detalle"
-                            data-transition="fade">
-                                <img src="images/dvd.png">
-                                <span class="uib-caption">DVD</span>
-                            </a>
-                        </div>
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_18 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="idbtntv" href="#detalle"
-                            data-transition="fade">
-                                <img src="images/tv.png">
-                                <span class="uib-caption">TV</span>
-                            </a>
-                        </div>
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_19 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="idbtnplancha"
-                            href="#detalle" data-transition="fade">
-                                <img src="images/plancha.png">
-                                <span class="uib-caption">Plancha</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="uib-grid-row">
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_20 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="idbtnducha" href="#detalle"
-                            data-transition="fade">
-                                <img src="images/ducha.png">
-                                <span class="uib-caption">Ducha</span>
-                            </a>
-                        </div>
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_21 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="idbtngame" href="#detalle"
-                            data-transition="fade">
-                                <img src="images/game.png">
-                                <span class="uib-caption">Juegos</span>
-                            </a>
-                        </div>
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_22 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="idbtnfoco" href="#detalle"
-                            data-transition="fade">
-                                <img src="images/foco.png">
-                                <span class="uib-caption">Lamparas</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="uib-grid-row">
-                        <div class="uib-grid-cell widget-container">
-                            <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_23 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="idbtnrefri" href="#detalle"
-                            data-transition="fade">
-                                <img src="images/refri.png">
-                                <span class="uib-caption">Refrigerador</span>
-                            </a>
-                        </div>
-                        <div class="uib-grid-cell widget-container"></div>
-                        <div class="uib-grid-cell widget-container"></div>
+            <div class="upage panel" id="consumo" data-header="af-header-2" data-footer="none">
+                <div class="upage-outer">
+                    <div class="upage-content ac0 content-area vertical-col" id="page_36_89">
+                        <div class="uib-grid widget uib_w_44 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
+                            <div class="uib-grid-row">
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_57 d-margins" data-uib="media/graphic_button" data-ver="0" id="idEquipoSonido" href="#detalle" data-transition="fade">
+                                        <img src="images/EquipoSonido.png">
+
+                                        <span class="uib-caption"></span>
+                                    </a>
+
+                                </div>
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_46 d-margins" data-uib="media/graphic_button" data-ver="0" id="idLavadora" href="#detalle" data-transition="fade">
+                                        <img src="images/Lavadora.png">
+
+                                        <span class="uib-caption"></span>
+                                    </a>
+                                </div>
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_47 d-margins" data-uib="media/graphic_button" data-ver="0" id="idbtnlaptop" href="#detalle" data-transition="fade">
+                                        <img src="images/laptop.png">
+
+                                        <span class="uib-caption"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="uib-grid-row">
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_60 d-margins" data-uib="media/graphic_button" data-ver="0" id="idbtndvd" href="#detalle" data-transition="fade">
+                                        <img src="images/dvd.png">
+                                        <span class="uib-caption"></span>
+                                    </a>
+
+                                </div>
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_49 d-margins" data-uib="media/graphic_button" data-ver="0" id="idbtntv" href="#detalle" data-transition="fade">
+                                        <img src="images/tv.png">
+
+                                        <span class="uib-caption"></span>
+                                    </a>
+                                </div>
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_50 d-margins" data-uib="media/graphic_button" data-ver="0" id="idbtnplancha" href="#detalle" data-transition="fade">
+                                        <img src="images/plancha.png">
+
+                                        <span class="uib-caption"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="uib-grid-row">
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_61 d-margins" data-uib="media/graphic_button" data-ver="0" id="idbtnducha" href="#detalle" data-transition="fade">
+                                        <img src="images/ducha.png">
+                                        <span class="uib-caption"></span>
+                                    </a>
+
+                                </div>
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_62 d-margins" data-uib="media/graphic_button" data-ver="0" id="idbtngame" href="#detalle" data-transition="fade">
+                                        <img src="images/game.png">
+                                        <span class="uib-caption"></span>
+                                    </a>
+                                </div>
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_63 d-margins" data-uib="media/graphic_button" data-ver="0" id="idbtnfoco" href="#detalle" data-transition="fade">
+                                        <img src="images/foco.png">
+                                        <span class="uib-caption"></span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="uib-grid-row">
+                                <div class="uib-grid-cell widget-container">
+                                    <a class="uib-graphic-button default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_73 d-margins" data-uib="media/graphic_button" data-ver="0" id="idbtnrefri" href="#detalle" data-transition="fade">
+                                        <img src="images/refri.png">
+                                        <span class="uib-caption"></span>
+                                    </a>
+                                </div>
+                                <div class="uib-grid-cell widget-container"></div>
+                                <div class="uib-grid-cell widget-container"></div>
+                            </div>
+                        </div><a class="button widget uib_w_70 d-margins" data-uib="app_framework/button" data-ver="1" id="idbtnConsultar" href="#consumoEquipos" data-transition="fade">Consultar</a>
                     </div>
                 </div>
-                <a class="button widget uib_w_30 d-margins" data-uib="app_framework/button" data-ver="1" id="idbtnConsultar" href="#consumoEquipo" data-transition="fade">Consultar</a>
             </div>
-            <div class="upage vertical-col left panel" id="detalle" data-header="af-header-4" data-footer="none">
-                <div class="table-thing with-label widget uib_w_25 d-margins" data-uib="app_framework/input" data-ver="1">
-                    <label class="narrow-control label-inline" for="idcantidad">Catidad</label>
-                    <input class="wide-control" placeholder="Equipo" type="text" id="idcantidad">
+            <div class="upage vertical-col panel" id="detalle" data-header="af-header-1" data-footer="none">
+                <div class="widget uib_w_52 d-margins" data-uib="media/text" data-ver="0" id="idtxtnombre">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>&nbsp;</p>
+                    </div>
                 </div>
-                <div class="table-thing with-label widget uib_w_26 d-margins" data-uib="app_framework/input" data-ver="1">
+                <div class="table-thing with-label widget uib_w_53 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" for="idcantidad">Cantidad</label>
+
+                    <input class="wide-control" type="text" placeholder="Equipo" id="idcantidad">
+                </div>
+                <div class="table-thing with-label widget uib_w_54 d-margins" data-uib="app_framework/input" data-ver="1">
                     <label class="narrow-control label-inline" for="idwatts">Potencia</label>
+
                     <input class="wide-control" placeholder="Watts" type="text" id="idwatts">
                 </div>
-                <div class="table-thing with-label widget uib_w_27 d-margins" data-uib="app_framework/input" data-ver="1">
+                <div class="table-thing with-label widget uib_w_55 d-margins" data-uib="app_framework/input" data-ver="1">
                     <label class="narrow-control label-inline" for="idhrs">Tiempo de uso</label>
 
-                    <input class="wide-control" placeholder="Horas de uso" type="text" id="idhrs">
-                </div><a class="button widget uib_w_28 d-margins icon busy" data-uib="app_framework/button" data-ver="1" id="idbtnAgregar" href="#consumo" data-transition="fade">Agregar</a>
+                    <input class="wide-control" placeholder="Hrs" type="text" id="idhrs">
+                </div><a class="button widget uib_w_56 d-margins icon busy" data-uib="app_framework/button" data-ver="1" id="idbtnAgregar" href="#consumo" data-transition="fade">Agregar</a>
             </div>
-            <div class="upage vertical-col left panel" id="consumoEquipo" data-header="af-header-4" data-footer="none">
-
-                <div class="widget uib_w_29 d-margins" data-uib="media/text" data-ver="0" id="idtxtresultado">
+            <div class="upage vertical-col panel" id="consumoEquipos" data-header="af-header-4" data-footer="none">
+                <div class="widget uib_w_72 d-margins" data-uib="media/text" data-ver="0" id="idtxtresultado">
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>
                     <div>
