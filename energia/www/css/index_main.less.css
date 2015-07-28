@@ -326,7 +326,7 @@ body:not(#afui) .upage-outer {
     margin-right: 6px;
   }
   #afui .d-margins {
-    margin-bottom: 25px;
+    margin-bottom: 2px;
   }
 }
 .left-receptacle {
@@ -750,5 +750,21 @@ figure.widget audio {
     text-decoration: none;
     text-align: right;
     line-height: normal;
+  }
+}
+@media all {
+  #afui .wrapping-col > .margdeta,
+  #afui .wrapping-col > .afScrollPanel > .margdeta {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .wrapping-col > .margdeta,
+  #afui .wrapping-col > .afScrollPanel > .margdeta {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .margdeta {
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
 }

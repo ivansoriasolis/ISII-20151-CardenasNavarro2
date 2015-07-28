@@ -31,7 +31,7 @@ function register_event_handlers()
 		
         var igv = 0.18;
 		var consumo = 0;
-        var alum_public = 0.0945;
+        var alum_public = 0.0845;
 		var primeros30kw = 8.82; 
 		var mantenimiento = 0.67;
 		var costoKWh = 0.6070;
@@ -65,14 +65,14 @@ function register_event_handlers()
                 document.getElementById('idTextCosto').innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#B8860B"> S/. '+ subtotal + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#DAA520">S/.'+TotalPago+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"';
             }
             else
-            {
+            { alert("CONSUMO ES MAYOR QUE  30 KWH");
                 var nuevoresult = diferenciaLectura - 30;//calcula la diferencia
                 energia = nuevoresult * costoKWh;
                 var costoAlumbrado = energia * alum_public;
                 var subtotal = (energia + costoAlumbrado + cargofijo + mantenimiento + primeros30kw)*1;
-                var Total = subtotal * igv;
-                var TotalPago = Total + electrificacion;
-                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPago+'</div><br>'+'NO SE OLVIDE QUE PAGE ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
+                var Total = (subtotal * igv)*1;
+                var TotalPago = (Total)*1 + (electrificacion)*1;
+                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPago+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
             }            
         }               
         else
