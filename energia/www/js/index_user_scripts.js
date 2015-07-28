@@ -70,9 +70,9 @@ function register_event_handlers()
                 energia = nuevoresult * costoKWh;
                 var costoAlumbrado = energia * alum_public;
                 var subtotal = (energia + costoAlumbrado + cargofijo + mantenimiento + primeros30kw)*1;
-                var Total = subtotal * igv;
-                var TotalPagos = Total + electrificacion;
-                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPagos+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
+                var Total = (subtotal * igv)*1;
+                var TotalPagar = Total+subtotal+electrificacion;
+                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPagar+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
             }            
         }               
         else
