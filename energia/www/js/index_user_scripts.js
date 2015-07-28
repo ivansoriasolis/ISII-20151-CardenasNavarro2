@@ -46,7 +46,7 @@ function register_event_handlers()
         //var condicion = ((lecAnterior.value)*1 < (lecActual.value)*1) && (lecActual.value != '' && lecAnterior.value != '');
 		var condicion1 = (lecAnterior.value)*1 < (lecActual.value)*1;
         var condicion2 = lecActual.value != '' && lecAnterior.value != '';
-       // var condicion3 = lecActual.value ==lecAnterior;
+        //var condicion3 = (lecActual.value)*1 == (lecAnterior.value)*1;
         var condicion = condicion1 && condicion2;
         
         if(condicion)
@@ -84,17 +84,21 @@ function register_event_handlers()
         {
             if (condicion2 == false) {
                 alert("DEBE INGRESAR LOS CAMPOS");
+
+
             }else{
                 alert(" ERROR DE LECTURA: LA LECTURA ACTUAL ES MENOR  ");
+
+
             }
             //document.getElementById('idTextCosto').innerHTML='Ingrese nuevamente los datos';
             lecActual.value='';
             lecAnterior.value='';
         }
        
-       /* if ((lecActual.value)*1 == (lecAnterior.value) *1) {
+      /* if (condicion3 ==true) {
             alert("USTED NO TIENE NINGUN CONSUMO ES IGUAL A 0 ");
-                
+                var diferenciaLectura =0;
                 var costoAlumbrado = 1* alum_public;
                 var subtotal = (costoAlumbrado + cargofijo + mantenimiento )*1;
                 var sbt = subtotal.toFixed(2);
@@ -107,6 +111,9 @@ function register_event_handlers()
         }
             else{ 
             alert("CONSUMO no son iguales");
+
+            /*lecActual.value='';
+            lecAnterior.value='';
 
 
 
