@@ -66,13 +66,13 @@ function register_event_handlers()
             }
             else
             { alert("CONSUMO ES MAYOR QUE  30 KWH");
-                var nuevoresult = diferenciaLectura - 30;//calcula la diferencia
-                energia = (nuevoresult * costoKWh)*1;
+                var nuevoresult = (diferenciaLectura - 30)*1;//calcula la diferencia
+                energia = nuevoresult * costoKWh;
                 var costoAlumbrado = energia * alum_public;
                 var subtotal = (energia + costoAlumbrado + cargofijo + mantenimiento + primeros30kw)*1;
-                //var Total = (subtotal * igv)*1;
-                var TotalPagoS = (subtotal + subtotal*igv + lectrificacion)*1;
-                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPagoS+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
+                var Total = subtotal * igv;
+                var TotalPagos = Total + lectrificacion;
+                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPagos+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
             }            
         }               
         else
@@ -80,7 +80,7 @@ function register_event_handlers()
             if (condicion2 == false) {
                 alert("DEBE INGRESAR LOS CAMPOS");
             }else{
-                alert(" ERROR DE LECTURA: LA LECTURA ACTUAL ES MENOR");
+                alert(" ERROR DE LECTURA: LA LECTURA ACTUAL ES MENOR ");
             }
             //document.getElementById('idTextCosto').innerHTML='Ingrese nuevamente los datos';
             lecActual.value='';
