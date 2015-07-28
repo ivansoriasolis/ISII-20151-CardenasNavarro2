@@ -308,12 +308,12 @@ body:not(#afui) .upage-outer {
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   #afui .vertical-col > .d-margins,
   #afui .vertical-col > .afScrollPanel > .d-margins {
@@ -326,8 +326,7 @@ body:not(#afui) .upage-outer {
     margin-right: 6px;
   }
   #afui .d-margins {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 25px;
   }
 }
 .left-receptacle {
@@ -633,4 +632,123 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   
+}
+@media all {
+  #afui .texto p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #000080;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+  }
+}
+@media all {
+  #afui .detalle p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: lighter;
+    color: #000080;
+    text-decoration: underline;
+    text-align: center;
+  }
+}
+@media all {
+  
+}
+@media all {
+  #afui .label > label {
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #10096c;
+    font-family: serif;
+  }
+}
+@media all {
+  #afui .btcalcular {
+    height: 50px !important;
+    width: 280px !important;
+    border-radius: 20% !important;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media all {
+  #afui .txtcal {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bolder;
+    color: #0000ff;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+@media all {
+  #afui .txcanc {
+    font-size: 23px;
+    font-style: normal;
+    font-weight: bolder;
+    color: #00ff00;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+  }
+}
+@media all {
+  #afui .txotros {
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+  }
+}
+figure.widget audio {
+  width: 100%;
+}
+@media all {
+  #afui .default-sprite-button div.uib-sprite {
+    background-image: url(../images/Exclaim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media all {
+  #afui .hover-sprite-button:hover div.uib-sprite {
+    background-image: url(../images/Checkmark.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media all {
+  #afui .active-sprite-button:active div.uib-sprite {
+    background-image: url(../images/X.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media all {
+  #afui .sprite-sizing {
+    height: 135px !important;
+    width: 135px !important;
+    -webkit-flex: 0 0 auto !important;
+    -moz-flex: 0 0 auto !important;
+    -ms-flex: 0 0 auto !important;
+    -o-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
+  }
+}
+@media all {
+  #afui .reserva p {
+    font-size: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #003d79;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: right;
+    line-height: normal;
+  }
 }
