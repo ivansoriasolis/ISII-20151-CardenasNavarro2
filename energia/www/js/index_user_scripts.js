@@ -56,7 +56,7 @@ function register_event_handlers()
 				
 				alert("USTED TIENE LA POSIBILIDAD DE AFILIARSE AL FISE");
 
-                energia = diferenciaLectura * costoKWh;
+                energia = (diferenciaLectura * costoKWh)*1;
                 var costoAlumbrado= energia * alum_public;
                 
                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
@@ -67,12 +67,12 @@ function register_event_handlers()
             else
             { alert("CONSUMO ES MAYOR QUE  30 KWH");
                 var nuevoresult = diferenciaLectura - 30;//calcula la diferencia
-                energia = nuevoresult * costoKWh;
+                energia = (nuevoresult * costoKWh)*1;
                 var costoAlumbrado = energia * alum_public;
                 var subtotal = (energia + costoAlumbrado + cargofijo + mantenimiento + primeros30kw)*1;
-                var Total = (subtotal * igv)*1;
-                var TotalPago = (Total)*1 + (electrificacion)*1;
-                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPago+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
+                //var Total = (subtotal * igv)*1;
+                var TotalPagoS = (subtotal + subtotal*igv + lectrificacion)*1;
+                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPagoS+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
             }            
         }               
         else
