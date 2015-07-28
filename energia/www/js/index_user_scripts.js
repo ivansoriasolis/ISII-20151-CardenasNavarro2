@@ -91,12 +91,12 @@ function register_event_handlers()
             lecActual.value='';
             lecAnterior.value='';
         }
-        /*if (lecActual*1 == lecAnterior*1) {
+       
+       /* if ((lecActual.value)*1 == (lecAnterior.value) *1) {
             alert("USTED NO TIENE NINGUN CONSUMO ES IGUAL A 0 ");
                 
-                energia = 0.09;
-                var costoAlumbrado = energia* alum_public;
-                var subtotal = (energia + costoAlumbrado + cargofijo + mantenimiento )*1;
+                var costoAlumbrado = 1* alum_public;
+                var subtotal = (costoAlumbrado + cargofijo + mantenimiento )*1;
                 var sbt = subtotal.toFixed(2);
                 var Total = (subtotal * igv)*1;
                 var TotalPagar = Total+subtotal+electrificacion;
@@ -112,7 +112,7 @@ function register_event_handlers()
 
         }*/
          activate_page("#mainpage"); 
-        }
+        
     });
     
     $(document).on("click", "#cancelar", function(evt)
