@@ -56,7 +56,7 @@ function register_event_handlers()
 				
 				alert("USTED TIENE LA POSIBILIDAD DE AFILIARSE AL FISE");
 
-                energia = (diferenciaLectura * costoKWh)*1;
+                energia = diferenciaLectura * costoKWh;
                 var costoAlumbrado= energia * alum_public;
                 
                 var subtotal = energia + costoAlumbrado + cargofijo + mantenimiento;
@@ -66,12 +66,12 @@ function register_event_handlers()
             }
             else
             { alert("CONSUMO ES MAYOR QUE  30 KWH");
-                var nuevoresult = (diferenciaLectura - 30)*1;//calcula la diferencia
+                var nuevoresult = diferenciaLectura - 30;//calcula la diferencia
                 energia = nuevoresult * costoKWh;
                 var costoAlumbrado = energia * alum_public;
                 var subtotal = (energia + costoAlumbrado + cargofijo + mantenimiento + primeros30kw)*1;
                 var Total = subtotal * igv;
-                var TotalPagos = Total + lectrificacion;
+                var TotalPagos = Total + electrificacion;
                 document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+subtotal+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+TotalPagos+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DE 28 DE CADA MES'+'<div style ="color:#FF4500"' ;  
             }            
         }               
