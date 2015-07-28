@@ -65,7 +65,7 @@ function register_event_handlers()
                 var total = subtotal + subtotal * igv;
                 var TotalPago = total + electrificacion;
                 var ppgg= TotalPago.toFixed(2);
-                document.getElementById('idTextCosto').innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#DAA520">S/.'+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
+                document.getElementById('idTextCosto').innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
             }
             else
             { alert("CONSUMO ES MAYOR QUE  30 KWH");
@@ -77,7 +77,7 @@ function register_event_handlers()
                 var Total = (subtotal * igv)*1;
                 var TotalPagar = Total+subtotal+electrificacion;
                 var topag = TotalPagar.toFixed(2);
-                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES:'+'<div style="color:#00FF00 style=" font-size:15px"> S/. '+sbt+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES:'+'<div style="color:#7CFC00">S/.'+topag+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>' ;  
+                document.getElementById('idTextCosto').innerHTML='USTED HA CONSUMISO:'+'<div style="color:#32CD32">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES :'+'<div style="color:#00FF00 style=" font-size:15px"> S/.  '+sbt+' </div><br>'+'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#7CFC00">S/. '+topag+'</div><br>'+'NO SE OLVIDE DE PAGAR ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>' ;  
             }            
         }               
         else
@@ -87,7 +87,7 @@ function register_event_handlers()
 
 
             }else{
-                alert(" ERROR DE LECTURA: LA LECTURA ACTUAL ES MENOR  ");
+                alert(" ERROR DE LECTURA: LA LECTURA ACTUAL ES MENOR  O SON IGUALES  ");
 
 
             }
