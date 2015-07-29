@@ -28,8 +28,7 @@ function register_event_handlers()
     {
         var lecActual = document.getElementById('idLecturaActual');
         var lecAnterior = document.getElementById('idLecturaAnterior');
-		
-        var igv = 0.18;
+		var igv = 0.18;
 		var consumo = 0;
         var alum_public = 0.0945;
 		var primeros30kw = 8.82; 
@@ -41,9 +40,7 @@ function register_event_handlers()
         var cargofijo = 3.59;
         var intereses = 0.08;
         var energia = 0;     
-        
-
-        //var condicion = ((lecAnterior.value)*1 < (lecActual.value)*1) && (lecActual.value != '' && lecAnterior.value != '');
+                //var condicion = ((lecAnterior.value)*1 < (lecActual.value)*1) && (lecActual.value != '' && lecAnterior.value != '');
 		var condicion1 = (lecAnterior.value)*1 < (lecActual.value)*1;
         var condicion2 = lecActual.value != '' && lecAnterior.value != '';
         //var condicion3 = (lecActual.value)*1 == (lecAnterior.value)*1;
@@ -232,7 +229,7 @@ function register_event_handlers()
             //$("#idtxtresultado").append('Cantidad de equipo:'+'<div style="color:red">'+equipos[i].c+'</div><br>'+'Potencia(watts):'+'<div style="color:blue">'+equipos[i].p+' </div><br>'+'Tiempo de uso:'+'<div style="color:yellow">'+equipos[i].t+' Hrs</div>'+'Costo por mes:'+'<div style="color:yellow">S/.'+equipos[i].monto+'</div>');
             $("#idtxtresultado").append('<div style="color:blue">Nombre Equipo: '+equipos[i].nombre+'</div>'+'Cantidad de equipo:'+equipos[i].c+'<br>'+'Potencia(watts):'+equipos[i].p +'<br>'+'Tiempo de uso:'+ equipos[i].t+' Hrs<br>'+'<div style="color:blue">Costo por mes: S/.'+equipos[i].monto+'</div><br>');
         };
-        $("#idtxtresultado").append('<div style="color:blue">Monto Total: S/.'+montoTotal+'</div>');
+        $("#idtxtresultado").append('<div style="color:blue" >Monto Total: S/.'+montoTotal+'</div>');
     
     });
 
