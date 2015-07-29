@@ -427,7 +427,7 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .active-graphic-button:active {
     border-radius: 5px;
-    background-color: #dddddd;
+    background-color: #00ffff;
   }
 }
 @media all {
@@ -766,5 +766,44 @@ figure.widget audio {
   #afui .margdeta {
     margin-top: 2px;
     margin-bottom: 2px;
+  }
+}
+@media all {
+  #afui .btconsultar {
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 100% !important;
+  }
+}
+@media all {
+  #afui .consultar {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000040;
+    font-family: serif;
+    text-decoration: none;
+  }
+}
+@media all {
+  #afui .sombra {
+    box-shadow: inset 1px 2px 1px 2px #e0fcfe;
+  }
+}
+@media all {
+  #afui .detallelabel > label {
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #800080;
+  }
+}
+@media all {
+  #afui .tiempo > label {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: #800040;
+    font-family: serif;
   }
 }
