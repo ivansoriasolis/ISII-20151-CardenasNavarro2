@@ -65,7 +65,7 @@ function register_event_handlers()
                 document.getElementById('idTextCosto').innerHTML='USTED CONSUMIO :'+'<div style="color:#8B4513">'+diferenciaLectura+' KW </div><br>'+'EL SUBTOTAL ES: '+'<div style="color:#B8860B"> S/. '+ sbtt + ' </div><br>' + 'EL PAGO A REALIZAR POR EL CONSUMO ES: '+'<div style="color:#DAA520">S/. '+ppgg+'</div><br>'+ 'NO SE OLVIDE QUE PAGE ANTES DEL 28 DE CADA MES'+'<div style ="color:#FF4500"'+'<br>';
             }
             else
-            { alert("CONSUMO ES MAYOR QUE  30 KWH");
+            { alert(" SU CONSUMO ES MAYOR QUE  30 KWH");
                 var nuevoresult = diferenciaLectura - 30;//calcula la diferencia
                 energia = nuevoresult * costoKWh;
                 var costoAlumbrado = energia * alum_public;
