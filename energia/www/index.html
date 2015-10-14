@@ -69,9 +69,6 @@
             <h1>Detalles de consumo</h1>
         </header>
 
-        <header class="wrapping-col wrap-element uib_w_84 correr" data-uib="app_framework/header" data-ver="2" id="af-header-0">
-            <h1>SIMUELECTRIC</h1>
-        </header>
         <div class="uwrap" id="content">
             <div class="upage panel resultadoM fondo" id="mainpage" data-header="af-header-0" data-footer="none">
                 <div class="upage-content ac0 content-area vertical-col" id="uib_page_2">
@@ -111,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="upage panel" id="consumo" data-header="af-header-2" data-footer="none">
+            <div class="upage panel" id="consumo" data-header="af-header-0" data-footer="none">
                 <div class="upage-outer">
                     <div class="upage-content ac0 content-area vertical-col" id="page_36_89">
                         <div class="uib-grid widget uib_w_44 grid-text grid-height d-margins" data-uib="layout/grid" data-ver="0">
@@ -238,7 +235,7 @@
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>
                     <div>
-                        <p>DETALLE DEL CONSUMO ZONA RURAL</p>
+                        <p class="ellipsis">DETALLE DEL CONSUMO ZONA URBANA</p>
                     </div>
                 </div>
                 <div class="table-thing with-label widget uib_w_92 d-margins detallelabel" data-uib="app_framework/input" data-ver="1">
@@ -249,12 +246,21 @@
                     <label class="narrow-control label-inline" for="idLecturaAnterior">Lectura Anterior</label>
                     <input class="wide-control" placeholder="Ingrese Lectura Anterior" type="text" name="lecAnterior" id="idLecturaAnterior">
                 </div>
+                <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+                    <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+                        <div class="widget-container content-area vertical-col">
+                            <span class="uib_shim"></span>
+                        </div>
+                    </div>
+                    <span class="uib_shim"></span>
+                </div>
 
-                <a class="button widget uib_w_80 txtcal icon busy red" data-uib="app_framework/button" data-ver="1">Calcular</a><a class="button widget uib_w_81 d-margins txcanc icon trash orange" data-uib="app_framework/button" data-ver="1">Cancelar</a>
-                <a class="button widget uib_w_82 d-margins txotros icon question yellow" data-uib="app_framework/button" data-ver="1">Otros Calculos</a><a class="button widget uib_w_83 d-margins txtregresar resultadoM icon left green" data-uib="app_framework/button"
-                data-ver="1">Regresar</a>
+                <a class="button widget uib_w_80 txtcal icon busy red" data-uib="app_framework/button" data-ver="1" id="calcRur">Calcular</a><a class="button widget uib_w_81 d-margins txcanc icon trash orange" data-uib="app_framework/button" data-ver="1"
+                id="cancelar">Cancelar</a>
+                <a class="button widget uib_w_82 d-margins txotros icon question yellow" data-uib="app_framework/button" data-ver="1" id="otrosRur">Otros Calculos</a><a class="button widget uib_w_83 d-margins txtregresar resultadoM icon left green" data-uib="app_framework/button"
+                data-ver="1" id="rregresarRu">Regresar</a>
             </div>
-            <div class="upage vertical-col left panel fondorural" id="PrincipalRural" data-header="af-header-0" data-footer="none">
+            <div class="upage vertical-col left panel fondorural" id="PrincipalRural" data-header="none" data-footer="none">
                 <div class="widget uib_w_85 d-margins detall" data-uib="media/text" data-ver="0">
                     <div class="widget-container left-receptacle"></div>
                     <div class="widget-container right-receptacle"></div>

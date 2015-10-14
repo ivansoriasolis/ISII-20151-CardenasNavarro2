@@ -253,7 +253,19 @@ function register_event_handlers()
         //alert(montoTotalArtefacto);
     }
 
-}
+    /* button  #rregresarRu */
+    $(document).on("click", "#rregresarRu", function(evt)
+    {
+         activate_page("#mainpage"); 
+    });
+    
+        /* button  #calcRur */
+    $(document).on("click", "#calcRur", function(evt)
+    {
+         activate_page("#mainpage"); 
+    });
+    
+    }
 document.addEventListener("app.Ready", register_event_handlers, false);
 })();
 
