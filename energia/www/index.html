@@ -55,9 +55,7 @@
         <header class="wrapping-col wrap-element uib_w_1 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-3"><a class="button backButton">Back</a>
             <h1>Energ.  Electric</h1>
         </header>
-        <header class="wrapping-col wrap-element uib_w_6 correr resultadoM" data-uib="app_framework/header" data-ver="2" id="af-header-0">
-            <h1>Energia Electrica</h1>
-        </header>
+
         <header class="wrapping-col wrap-element uib_w_10 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-1"><a class="button backButton">Back</a>
             <h1></h1>
         </header>
@@ -70,6 +68,9 @@
         <header class="wrapping-col wrap-element uib_w_71 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-4"><a class="button backButton">Back</a>
             <h1>Detalles de consumo</h1>
         </header>
+        <header class="wrapping-col wrap-element uib_w_76 correr" data-uib="app_framework/header" data-ver="2" id="af-header-5">
+            <h1>SIMULADOR DE CONSUMO</h1>
+        </header>
         <div class="uwrap" id="content">
             <div class="upage panel resultadoM fondo" id="mainpage" data-header="af-header-0" data-footer="none">
                 <div class="upage-content ac0 content-area vertical-col" id="uib_page_2">
@@ -77,9 +78,8 @@
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
                         <div>
-                            <p>DETALLE DEL CONSUMO
-                            </p>
-
+                            <p>SELECCIONE ZONA DE LECTURA</p>
+                            <p></p>
                         </div>
                     </div>
                     <div class="table-thing with-label widget uib_w_2 d-margins label" data-uib="app_framework/input" data-ver="1">
@@ -98,7 +98,7 @@
                         <div>
                             <p class="ellipsis" style="-webkit-line-clamp: 2;">Aplicación para calcular el costo del consumo de energía eléctrica en Andahuaylas</p>
                         </div>
-                    </div><a class="button widget uib_w_4 d-margins icon busy yellow txtcal" data-uib="app_framework/button" data-ver="1" id="idbtnCalcular">Calcular</a><a class="button widget uib_w_4 icon trash orange txcanc d-margins" data-uib="app_framework/button"
+                    </div><a class="button widget uib_w_4 d-margins txtcal icon busy yellow" data-uib="app_framework/button" data-ver="1" id="idbtnCalcular">Calcular</a><a class="button widget uib_w_4 icon trash orange txcanc d-margins" data-uib="app_framework/button"
                     data-ver="1" id="cancelar" href="#mainpage" data-transition="fade">Cancelar</a><a class="button widget uib_w_7 d-margins default-graphic-text icon question red txotros" data-uib="app_framework/button" data-ver="1" id="idbtnOtros" href="#consumo"
                     data-transition="fade">Otros Calculos</a>
 
@@ -240,6 +240,16 @@
                     </div>
                 </div>
                 <a class="button widget uib_w_74 d-margins icon left yellow" data-uib="app_framework/button" data-ver="1" id="salir" href="#mainpage" data-transition="fade">Regresar</a>
+            </div>
+            <div class="upage vertical-col left panel" id="index" data-header="none" data-footer="none"></div>
+            <div class="upage vertical-col left panel fondo" id="principal" data-header="af-header-5" data-footer="none">
+                <div class="widget uib_w_77 medidas detall" data-uib="media/text" data-ver="0">
+                    <div class="widget-container left-receptacle"></div>
+                    <div class="widget-container right-receptacle"></div>
+                    <div>
+                        <p>DETALLE DEL CONSUMO</p>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="wrap-element uib_w_9" data-uib="app_framework/footer" data-ver="1" id="Otros"></footer>

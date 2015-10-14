@@ -335,6 +335,9 @@ body:not(#afui) .upage-outer {
 .right-receptacle {
   float: right;
 }
+[data-uib="media/text"] p:first-of-type {
+  margin-top: 0px;
+}
 .ellipsis {
   overflow: hidden;
   display: -webkit-box;
@@ -397,7 +400,7 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .fondo {
     background-color: ;
-    background-image: url("../images/electro.gif");
+    background-image: url("../images/5.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -805,5 +808,63 @@ figure.widget audio {
     font-weight: bold;
     color: #800040;
     font-family: serif;
+  }
+}
+@media all {
+  #afui .medida > div.widget-container.left-receptacle,
+  #afui .medida > div.widget-container.right-receptacle {
+    width: 20px;
+    text-align: center;
+  }
+  #afui .medida > div.widget-container.left-receptacle,
+  #afui .medida > div.widget-container.right-receptacle {
+    width: 20px;
+    text-align: center;
+  }
+}
+@media all {
+  #afui .wrapping-col > .medidas,
+  #afui .wrapping-col > .afScrollPanel > .medidas,
+  #afui .vertical-col > .medidas,
+  #afui .vertical-col > .afScrollPanel > .medidas {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #afui .wrapping-col > .medidas,
+  #afui .wrapping-col > .afScrollPanel > .medidas,
+  #afui .vertical-col > .medidas,
+  #afui .vertical-col > .afScrollPanel > .medidas {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #afui .wrapping-col > .medidas,
+  #afui .wrapping-col > .afScrollPanel > .medidas,
+  #afui .vertical-col > .medidas,
+  #afui .vertical-col > .afScrollPanel > .medidas {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #afui .wrapping-col > .medidas,
+  #afui .wrapping-col > .afScrollPanel > .medidas,
+  #afui .vertical-col > .medidas,
+  #afui .vertical-col > .afScrollPanel > .medidas {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #afui .medidas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media all {
+  #afui .detall p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: #804000;
+    font-family: serif;
+    text-decoration: underline;
+    text-align: center;
+    line-height: ok;
   }
 }
