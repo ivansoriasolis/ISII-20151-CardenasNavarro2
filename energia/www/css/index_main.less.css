@@ -659,7 +659,10 @@ body:not(#afui) .upage-outer {
   }
 }
 @media all {
-  
+  #afui .correr {
+    display: none;
+    visibility: hidden;
+  }
 }
 @media all {
   #afui .label > label {
