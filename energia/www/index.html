@@ -72,7 +72,7 @@
             <h1>Zona Urbana</h1>
         </header>
         <header class="wrapping-col wrap-element uib_w_84" data-uib="app_framework/header" data-ver="2" id="af-header-0">
-            <h1>Zona Rural</h1>
+            <h1>SIMULADOR DE CONSUMO</h1>
         </header>
         <div class="uwrap" id="content">
             <div class="upage panel resultadoM fondo" id="mainpage" data-header="af-header-0" data-footer="none">
@@ -253,16 +253,15 @@
                         <p>DETALLE DEL CONSUMO ZONA RURAL</p>
                     </div>
                 </div>
-                <div class="table-thing with-label widget uib_w_78 d-margins detallelabel" data-uib="app_framework/textarea" data-ver="1">
-                    <label class="narrow-control label-inline">Lectura actual</label>
-
-                    <textarea class="wide-control" placeholder="Ingrese Lectura Actual" rows="1" wrap="hard"></textarea>
+                <div class="table-thing with-label widget uib_w_92 d-margins detallelabel" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" for="idLecturaActual">Lectura Actual</label>
+                    <input class="wide-control" placeholder="Ingrese Lectura Actual" type="text" name="lecActual" id="idLecturaActual">
                 </div>
-                <div class="table-thing with-label widget uib_w_79 d-margins detallelabel" data-uib="app_framework/textarea" data-ver="1">
-                    <label class="narrow-control label-inline">Lectura Anterior</label>
-
-                    <textarea class="wide-control" placeholder="Ingrese Lectura Anterior" rows="1" wrap="hard"></textarea>
+                <div class="table-thing with-label widget uib_w_93 d-margins detallelabel" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" for="idLecturaAnterior">Lectura Anterior</label>
+                    <input class="wide-control" placeholder="Ingrese Lectura Anterior" type="text" name="lecAnterior" id="idLecturaAnterior">
                 </div>
+
                 <a class="button widget uib_w_80 txtcal icon busy red" data-uib="app_framework/button" data-ver="1">Calcular</a><a class="button widget uib_w_81 d-margins txcanc icon trash orange" data-uib="app_framework/button" data-ver="1">Cancelar</a>
                 <a class="button widget uib_w_82 d-margins txotros icon question yellow" data-uib="app_framework/button" data-ver="1">Otros Calculos</a><a class="button widget uib_w_83 d-margins txtregresar resultadoM icon left green" data-uib="app_framework/button"
                 data-ver="1">Regresar</a>
