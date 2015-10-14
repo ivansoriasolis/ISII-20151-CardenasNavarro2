@@ -68,11 +68,9 @@
         <header class="wrapping-col wrap-element uib_w_71 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-4"><a class="button backButton">Back</a>
             <h1>Detalles de consumo</h1>
         </header>
-        <header class="wrapping-col wrap-element uib_w_76 correr" data-uib="app_framework/header" data-ver="2" id="af-header-5">
-            <h1>Zona Urbana</h1>
-        </header>
-        <header class="wrapping-col wrap-element uib_w_84" data-uib="app_framework/header" data-ver="2" id="af-header-0">
-            <h1>SIMULADOR DE CONSUMO</h1>
+
+        <header class="wrapping-col wrap-element uib_w_84 correr" data-uib="app_framework/header" data-ver="2" id="af-header-0">
+            <h1>Simulaor de consumo</h1>
         </header>
         <div class="uwrap" id="content">
             <div class="upage panel resultadoM fondo" id="mainpage" data-header="af-header-0" data-footer="none">
@@ -85,26 +83,11 @@
                             <p></p>
                         </div>
                     </div>
-                    <div class="table-thing with-label widget uib_w_2 d-margins label" data-uib="app_framework/input" data-ver="1">
-                        <label class="narrow-control label-inline" for="idLecturaActual">LECTURA ACTUAL</label>
 
-                        <input class="wide-control" placeholder="Ingrese Lectura Actual" type="text" name="lecActual" id="idLecturaActual" maxlength="6">
-                    </div>
-                    <div class="table-thing with-label widget uib_w_3 d-margins label" data-uib="app_framework/input" data-ver="1">
-                        <label class="narrow-control label-inline" for="idLecturaAnterior">LECTURA ANTERIOR</label>
-
-                        <input class="wide-control" placeholder="Ingrese Lectura Anterior" type="text" name="lecAnterior" id="idLecturaAnterior" maxlength="6">
-                    </div>
-                    <div class="widget uib_w_5 d-margins estilo1 texto" data-uib="media/text" data-ver="0">
-                        <div class="widget-container left-receptacle"></div>
-                        <div class="widget-container right-receptacle"></div>
-                        <div>
-                            <p class="ellipsis" style="-webkit-line-clamp: 2;">Aplicación para calcular el costo del consumo de energía eléctrica en Andahuaylas</p>
-                        </div>
-                    </div><a class="button widget uib_w_4 d-margins txtcal icon busy yellow" data-uib="app_framework/button" data-ver="1" id="idbtnCalcular">Calcular</a><a class="button widget uib_w_4 txcanc d-margins icon trash orange" data-uib="app_framework/button"
-                    data-ver="1" id="cancelar" href="#mainpage" data-transition="fade">Cancelar</a><a class="button widget uib_w_7 d-margins default-graphic-text icon question red txotros" data-uib="app_framework/button" data-ver="1" id="idbtnOtros" href="#consumo"
-                    data-transition="fade">Otros Calculos</a>
-
+                    <a class="uib-graphic-button widget uib_w_94 Zurbana zurban media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="urbana" href="#principal" data-transition="fade">
+                        <img src="images/andahuaylas.jpg">
+                        <span class="uib-caption">Zona Urbana</span>
+                    </a>
                     <div class="widget uib_w_59 d-margins" data-uib="media/text" data-ver="0" id="idTextCosto">
                         <div class="widget-container left-receptacle"></div>
                         <div class="widget-container right-receptacle"></div>
@@ -112,6 +95,11 @@
                             <p>&nbsp;</p>
                         </div>
                     </div>
+
+                    <a class="uib-graphic-button widget uib_w_95 zurban ImgZRural media-button-text-bottom" data-uib="media/graphic_button" data-ver="0" id="rural" href="#PrincipalRural" data-transition="fade">
+                        <img src="images/rural.jpg">
+                        <span class="uib-caption">Zona Rural</span>
+                    </a>
                 </div>
 
                 <div class="widget uib_w_75 d-margins reserva" data-uib="media/text" data-ver="0">

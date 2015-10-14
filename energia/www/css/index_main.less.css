@@ -400,10 +400,11 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .fondo {
     background-color: ;
-    background-image: url("../images/1.jpg");
+    background-image: url("../images/lampa.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
   }
 }
 @media all {
@@ -450,7 +451,9 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .default-image-sizing > img {
+    margin: 5px;
     width: 50px;
+    height: 100%;
   }
 }
 .figure-align {
@@ -659,8 +662,8 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .correr {
-    display: none;
-    visibility: hidden;
+    display: block;
+    visibility: visible;
   }
 }
 @media all {
@@ -894,5 +897,27 @@ figure.widget audio {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+  }
+}
+@media all {
+  #afui .Zurbana > img {
+    margin: 10px;
+    width: 70%;
+  }
+}
+@media all {
+  #afui .zurban {
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #0000ff;
+    text-decoration: underline;
+    text-align: center;
+  }
+}
+@media all {
+  #afui .ImgZRural > img {
+    margin: 10px;
+    width: 75%;
   }
 }
