@@ -886,3 +886,11 @@ figure.widget audio {
     line-height: normal;
   }
 }
+@media all {
+  #afui .fondorural {
+    background-color: ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
