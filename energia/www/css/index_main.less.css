@@ -400,11 +400,10 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .fondo {
     background-color: ;
-    background-image: url("../images/5.jpg");
+    background-image: url("../images/1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
   }
 }
 @media all {
