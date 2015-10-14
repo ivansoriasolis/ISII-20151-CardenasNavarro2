@@ -605,7 +605,7 @@ body:not(#afui) .upage-outer {
     padding-right: 20px;
   }
 }
-@media all and (min-width: 320px) {
+@media all and (min-width: 323px) {
   #afui .row-height-1 > .col > .content-area {
     min-height: 100px;
   }
@@ -681,20 +681,21 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .txtcal {
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: bolder;
-    color: #0000ff;
+    color: #ffffff;
+    font-family: serif;
     text-decoration: none;
     text-align: center;
   }
 }
 @media all {
   #afui .txcanc {
-    font-size: 23px;
+    font-size: 25px;
     font-style: normal;
     font-weight: bolder;
-    color: #00ff00;
+    color: #0000ff;
     font-family: serif;
     text-decoration: none;
     text-align: center;
@@ -703,9 +704,14 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .txotros {
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
+    font-weight: bold;
+    color: #0000ff;
+    font-family: serif;
+    text-decoration: none;
     text-align: center;
+    line-height: normal;
   }
 }
 figure.widget audio {
@@ -866,5 +872,17 @@ figure.widget audio {
     text-decoration: underline;
     text-align: center;
     line-height: ok;
+  }
+}
+@media all {
+  #afui .txtregresar {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    color: #db042f;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
   }
 }
