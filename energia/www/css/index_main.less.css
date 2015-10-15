@@ -418,7 +418,7 @@ body:not(#afui) .upage-outer {
     border-width: 1px;
     border-style: solid;
     border-color: grey;
-    background-color: #ffffff;
+    background-color: ;
   }
 }
 @media all {
