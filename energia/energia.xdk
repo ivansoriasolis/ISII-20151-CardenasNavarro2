@@ -6,7 +6,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "appDesigner",
       "projectGuid": "5fdd5281-edb4-44b3-a96f-0c9991f77e9c",
-      "lastModifiedDate": 1444778523602,
+      "lastModifiedDate": 1445348612484,
       "creationDate": 1434671810692
     },
     "XDK-app-designer": "true",
@@ -28,7 +28,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.device",
-        "permissions": {}
+        "permissions": {},
+        "name": "Device"
       },
       {
         "id": "org.apache.cordova.splashscreen",
@@ -40,7 +41,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.splashscreen",
-        "permissions": {}
+        "permissions": {},
+        "name": "Splashscreen"
       },
       {
         "id": "org.apache.cordova.device-motion",
@@ -52,7 +54,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.device-motion",
-        "permissions": {}
+        "permissions": {},
+        "name": "Device Motion"
       },
       {
         "id": "org.apache.cordova.camera",
@@ -64,7 +67,8 @@
         "dependedBy": [],
         "originType": "cordova.io",
         "origin": "org.apache.cordova.camera",
-        "permissions": {}
+        "permissions": {},
+        "name": "Camera"
       }
     ],
     "buildConfigurations": {
@@ -109,7 +113,7 @@
           "android-targetSdkVersion": "19",
           "android-installLocation": "auto"
         },
-        "isActive_": true,
+        "isActive_": false,
         "appName_": "energia",
         "appID_": "xdk.intel.blank.ad.template",
         "appAccess_": {
@@ -312,6 +316,6 @@
     "testDirectory": "test"
   },
   "editorTab": {
-    "showLiveDevelopmentTasksPanel": true
+    "showLiveDevelopmentTasksPanel": false
   }
 }
