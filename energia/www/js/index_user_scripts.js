@@ -254,7 +254,7 @@ function register_event_handlers()
     }
 
     /* button  #rregresarRu */
-    $(document).on("click", "#rregresarRu", function(evt)
+    $(document).on("click", "#regresarRu", function(evt)
     {
          activate_page("#mainpage"); 
     });
