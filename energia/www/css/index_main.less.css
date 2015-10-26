@@ -308,12 +308,12 @@ body:not(#afui) .upage-outer {
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   #afui .wrapping-col > .d-margins,
   #afui .wrapping-col > .afScrollPanel > .d-margins {
     margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   #afui .vertical-col > .d-margins,
   #afui .vertical-col > .afScrollPanel > .d-margins {
@@ -326,8 +326,7 @@ body:not(#afui) .upage-outer {
     margin-right: 6px;
   }
   #afui .d-margins {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
   }
 }
 .left-receptacle {
@@ -335,6 +334,9 @@ body:not(#afui) .upage-outer {
 }
 .right-receptacle {
   float: right;
+}
+[data-uib="media/text"] p:first-of-type {
+  margin-top: 0px;
 }
 .ellipsis {
   overflow: hidden;
@@ -398,7 +400,7 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .fondo {
     background-color: ;
-    background-image: url("../images/3.png");
+    background-image: url("../images/lampa.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -416,7 +418,7 @@ body:not(#afui) .upage-outer {
     border-width: 1px;
     border-style: solid;
     border-color: grey;
-    background-color: #ffffff;
+    background-color: ;
   }
 }
 @media all {
@@ -428,7 +430,7 @@ body:not(#afui) .upage-outer {
 @media all {
   #afui .active-graphic-button:active {
     border-radius: 5px;
-    background-color: #dddddd;
+    background-color: #00ffff;
   }
 }
 @media all {
@@ -449,7 +451,9 @@ body:not(#afui) .upage-outer {
 }
 @media all {
   #afui .default-image-sizing > img {
+    margin: 5px;
     width: 50px;
+    height: 100%;
   }
 }
 .figure-align {
@@ -603,7 +607,7 @@ body:not(#afui) .upage-outer {
     padding-right: 20px;
   }
 }
-@media all and (min-width: 320px) {
+@media all and (min-width: 323px) {
   #afui .row-height-1 > .col > .content-area {
     min-height: 100px;
   }
@@ -629,5 +633,309 @@ body:not(#afui) .upage-outer {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
+  }
+}
+@media all {
+  
+}
+@media all {
+  #afui .texto p {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #000080;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+  }
+}
+@media all {
+  #afui .detalle p {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: lighter;
+    color: #000080;
+    text-decoration: underline;
+    text-align: center;
+  }
+}
+@media all {
+  #afui .correr {
+    display: block;
+    visibility: visible;
+  }
+}
+@media all {
+  #afui .label > label {
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #10096c;
+    font-family: serif;
+  }
+}
+@media all {
+  #afui .btcalcular {
+    height: 50px !important;
+    width: 280px !important;
+    border-radius: 20% !important;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+@media all {
+  #afui .txtcal {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bolder;
+    color: #ffffff;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+@media all {
+  #afui .txcanc {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bolder;
+    color: #0000ff;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+  }
+}
+@media all {
+  #afui .txotros {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    color: #0000ff;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+  }
+}
+figure.widget audio {
+  width: 100%;
+}
+@media all {
+  #afui .default-sprite-button div.uib-sprite {
+    background-image: url(../images/Exclaim.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media all {
+  #afui .hover-sprite-button:hover div.uib-sprite {
+    background-image: url(../images/Checkmark.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media all {
+  #afui .active-sprite-button:active div.uib-sprite {
+    background-image: url(../images/X.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media all {
+  #afui .sprite-sizing {
+    height: 135px !important;
+    width: 135px !important;
+    -webkit-flex: 0 0 auto !important;
+    -moz-flex: 0 0 auto !important;
+    -ms-flex: 0 0 auto !important;
+    -o-flex: 0 0 auto !important;
+    flex: 0 0 auto !important;
+  }
+}
+@media all {
+  #afui .reserva p {
+    font-size: 10px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #003d79;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-align: right;
+    line-height: normal;
+  }
+}
+@media all {
+  #afui .wrapping-col > .margdeta,
+  #afui .wrapping-col > .afScrollPanel > .margdeta {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .wrapping-col > .margdeta,
+  #afui .wrapping-col > .afScrollPanel > .margdeta {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+  #afui .margdeta {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+@media all {
+  #afui .btconsultar {
+    height: 60px !important;
+    width: 60px !important;
+    border-radius: 100% !important;
+  }
+}
+@media all {
+  #afui .consultar {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: #000040;
+    font-family: serif;
+    text-decoration: none;
+  }
+}
+@media all {
+  #afui .sombra {
+    box-shadow: inset 1px 2px 1px 2px #e0fcfe;
+  }
+}
+@media all {
+  #afui .detallelabel > label {
+    font-size: 18px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #800080;
+  }
+}
+@media all {
+  #afui .tiempo > label {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    color: #800040;
+    font-family: serif;
+  }
+}
+@media all {
+  #afui .medida > div.widget-container.left-receptacle,
+  #afui .medida > div.widget-container.right-receptacle {
+    width: 20px;
+    text-align: center;
+  }
+  #afui .medida > div.widget-container.left-receptacle,
+  #afui .medida > div.widget-container.right-receptacle {
+    width: 20px;
+    text-align: center;
+  }
+}
+@media all {
+  #afui .wrapping-col > .medidas,
+  #afui .wrapping-col > .afScrollPanel > .medidas,
+  #afui .vertical-col > .medidas,
+  #afui .vertical-col > .afScrollPanel > .medidas {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #afui .wrapping-col > .medidas,
+  #afui .wrapping-col > .afScrollPanel > .medidas,
+  #afui .vertical-col > .medidas,
+  #afui .vertical-col > .afScrollPanel > .medidas {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #afui .wrapping-col > .medidas,
+  #afui .wrapping-col > .afScrollPanel > .medidas,
+  #afui .vertical-col > .medidas,
+  #afui .vertical-col > .afScrollPanel > .medidas {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #afui .wrapping-col > .medidas,
+  #afui .wrapping-col > .afScrollPanel > .medidas,
+  #afui .vertical-col > .medidas,
+  #afui .vertical-col > .afScrollPanel > .medidas {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #afui .medidas {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media all {
+  #afui .detall p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    color: #800040;
+    font-family: serif;
+    text-decoration: underline;
+    text-align: center;
+    line-height: ok;
+  }
+}
+@media all {
+  #afui .txtregresar {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    color: #db042f;
+    font-family: serif;
+    text-decoration: none;
+    text-align: center;
+    line-height: normal;
+  }
+}
+@media all {
+  #afui .fondorural {
+    background-color: ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media all {
+  #afui .Zurbana > img {
+    margin: 10px;
+    width: 70%;
+  }
+}
+@media all {
+  #afui .zurban {
+    font-size: 25px;
+    font-style: oblique;
+    font-weight: bold;
+    color: #0000ff;
+    text-decoration: underline;
+    text-align: center;
+  }
+}
+@media all {
+  #afui .ImgZRural > img {
+    margin: 10px;
+    width: 75%;
+  }
+}
+.uib_row_1:not(.cright) > .col {
+  padding-right: 20px;
+}
+.uib_row_1.cright > .col {
+  padding-left: 20px;
+}
+@media all {
+  .col-0_12-12 {
+    width: auto;
+    float: none !important;
+  }
+  .urow:not(.cright) > .col-0_12-12 {
+    padding-right: 0px !important;
+  }
+  .urow.cright > .col-0_12-12 {
+    padding-left: 0px !important;
   }
 }
